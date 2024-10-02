@@ -1,0 +1,97 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(255, 204, 0, 0.9); /* Light yellow background */
+    color: black;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    color: #ff5733; /* Darker orange for hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://example.com/your-pokemon-platinum-background.jpg') no-repeat center center/cover;
+    height: 60vh; /* Adjust height for the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Characters Section */
+#characters {
+    padding: 20px;
+    background-color: rgba(255, 204, 0, 0.8); /* Light yellow background */
+}
+
+.character {
+    margin-bottom: 15px;
+}
+
+/* Origin Section */
+#origin,
+#series {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(17, 17, 17, 0.8); /* Semi-transparent black */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Make footer relative */
+}

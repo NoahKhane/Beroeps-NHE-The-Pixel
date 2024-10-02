@@ -1,0 +1,140 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Basic font for the page */
+}
+
+body {
+    color: #fff; /* White text for readability */
+    background-color: #1b1b1b; /* Dark background for a mystical look */
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 10px #ffcc00; /* Glow effect on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://wallpapers.com/images/hd/majora-mask-artwork-n4gyjjgo54onf9r2.jpg') no-repeat center center/cover; /* Background image */
+    height: 70vh; /* Adjust height for the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; /* For text overlay */
+    overflow: hidden;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for text visibility */
+    padding: 40px;
+    border-radius: 15px; /* Rounder corners for a softer look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Larger heading */
+    text-shadow: 0 0 10px #ffcc00; /* Glow effect */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Call-to-action Button */
+.cta-button {
+    background-color: #ffcc00; /* Gold button */
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #ffd700; /* Slightly brighter gold on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Characters Section */
+#characters {
+    padding: 40px;
+    background-color: rgba(30, 30, 30, 0.9); /* Darker gray background for character section */
+    color: white;
+    text-align: center; /* Center text */
+}
+
+.character {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffcc00; /* Gold line separating characters */
+    padding: 15px; /* Space around each character */
+}
+
+.character h3 {
+    font-size: 1.8em; /* Larger character names */
+    margin-bottom: 10px; /* Space below name */
+}
+
+/* Origin Section */
+#origin,
+#series {
+    padding: 40px;
+    background-color: rgba(30, 30, 30, 0.9); /* Darker gray background */
+    margin: 10px 0;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Make footer relative */
+    margin-top: 20px; /* Space from the main content */
+}

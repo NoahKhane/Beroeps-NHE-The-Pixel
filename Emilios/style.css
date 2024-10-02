@@ -1,0 +1,103 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif; /* More adventurous font */
+}
+
+body {
+    color: #eaeaea; /* Light color for text */
+    background-color: #1d1f21; /* Dark background for a rugged look */
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Text shadow for depth */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #f39c12; /* Gold color for links */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 5px #f39c12; /* Glow effect on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://example.com/uncharted4-background.jpg') no-repeat center center/cover; /* Background image for hero */
+    height: 60vh; /* Adjust height for the hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; /* For text overlay */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Characters Section */
+#characters {
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.9); /* Darker background for character section */
+    color: white;
+}
+
+.character {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f39c12; /* Gold line separating characters */
+    padding-bottom: 10px; /* Space below each character */
+}
+
+/* Origin Section */
+#origin,
+#series {
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.9); /* Darker background */
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Make footer relative */
+    margin-top: 20px; /* Space from the main content */
+}
