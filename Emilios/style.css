@@ -13,12 +13,14 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    background-color: #C4A484; /* Green background with transparency */
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Keep header on top */
+    height: 60px; /* Fixed header height */
+    backdrop-filter: blur(5px); /* Optional: Adds a blur effect behind the header for better visibility */
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
 .logo {
     font-size: 1.8em;
     font-weight: bold;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Text shadow for depth */
+    color: #6F4E37; /* Logo color */
 }
 
 .nav-links {
@@ -43,9 +45,11 @@ nav {
 }
 
 .nav-links a {
-    color: #f39c12; /* Gold color for links */
+    color: #6F4E37; /* Brown color for links */
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 1.1em;
+    font-weight: bold; /* Make text bold */
 }
 
 .nav-links a:hover {
@@ -54,8 +58,10 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('https://example.com/uncharted4-background.jpg') no-repeat center center/cover; /* Background image for hero */
-    height: 60vh; /* Adjust height for the hero section */
+    background: url('3011864-20160224_uncharted_4_story_trailer_01_1456311962.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the section */
+    height: calc(100vh - 60px); /* Full height minus header */
+    margin-top: 0; /* No gap between header and hero */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +73,7 @@ nav {
 .hero-content {
     background: rgba(0, 0, 0, 0.7); /* Dark overlay for text visibility */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 /* Characters Section */
@@ -100,4 +106,5 @@ footer {
     padding: 20px;
     position: relative; /* Make footer relative */
     margin-top: 20px; /* Space from the main content */
+    padding: 10px 20px;
 }

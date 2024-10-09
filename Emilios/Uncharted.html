@@ -5,54 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uncharted 4 Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript to add audio functionality
+        let audio;
+
+        window.onload = function() {
+            audio = new Audio('noname.mp3'); // Replace with your audio file path
+            audio.volume = 0.5; // Set volume (0.0 to 1.0)
+            audio.loop = true; // Loop the audio
+
+            // Attempt to play audio automatically
+            audio.play().catch(error => {
+                console.log("Audio playback prevented:", error);
+                // Show a button if autoplay fails
+                showPlayButton();
+            });
+        };
+
+        function showPlayButton() {
+            const button = document.createElement('button');
+            button.textContent = 'Play Background Music';
+            button.style.position = 'fixed';
+            button.style.bottom = '20px';
+            button.style.right = '20px';
+            button.style.padding = '10px 20px';
+            button.style.fontSize = '16px';
+            button.style.backgroundColor = 'rgba(103, 166, 9, 0.8)'; // Green color
+            button.style.color = 'white';
+            button.style.border = 'none';
+            button.style.borderRadius = '5px';
+            button.style.cursor = 'pointer';
+
+            document.body.appendChild(button);
+
+            button.addEventListener('click', () => {
+                audio.play();
+                button.remove(); // Remove button after audio starts
+            });
+        }
+    </script>
+
+
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Uncharted 4: A Thief's End</div>
             <ul class="nav-links">
-                <li><a href="#characters">Characters</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Emilios/characters.html">Characters</a></li>
                 <li><a href="#origin">Origin</a></li>
                 <li><a href="#series">The Series</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to the World of Uncharted 4</h1>
-            <p>Join Nathan Drake on his final adventure!</p>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the World of Uncharted 4</h1>
+                <p>Join Nathan Drake on his final adventure!</p>
+            </div>
+        </section>
 
-    <section id="characters">
-        <h2>Main Characters</h2>
-        <div class="character">
-            <h3>Nathan Drake</h3>
-            <p>The charismatic treasure hunter and protagonist, known for his wit and resourcefulness.</p>
-        </div>
-        <div class="character">
-            <h3>Elena Fisher</h3>
-            <p>Nathan's wife and a skilled journalist, she brings a strong and supportive presence to the story.</p>
-        </div>
-        <div class="character">
-            <h3>Sam Drake</h3>
-            <p>Nathan's long-lost brother who pulls him back into the world of treasure hunting.</p>
-        </div>
-    </section>
+        <section id="characters">
+          
+            <div class="character">
+                
+            </div>
+            <div class="character">
+               
+            </div>
+            <div class="character">
+                
+            </div>
+        </section>
 
-    <section id="origin">
-        <h2>Origin of Uncharted 4</h2>
-        <p>Released in 2016, Uncharted 4 was developed by Naughty Dog and serves as the conclusion to Nathan Drake's story, showcasing stunning graphics and a compelling narrative.</p>
-    </section>
+        <section id="origin">
+        </section>
 
-    <section id="series">
-        <h2>The Uncharted Series</h2>
-        <p>Since its debut in 2007, the Uncharted series has captivated players with its blend of action, adventure, and storytelling, becoming one of PlayStation's flagship franchises.</p>
-    </section>
+        <section id="series"> 
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Uncharted 4 Fan Page. All rights reserved.</p>
+        <p>&copy; 2024 Uncharted 4. Naughty Dog.</p>
     </footer>
 </body>
 </html>
