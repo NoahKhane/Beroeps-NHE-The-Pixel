@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majora's Mask Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Zelda Characters</title>
+    <link rel="stylesheet" href="characters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Zelda-like font -->
+    <script defer src="script.js"></script> <!-- Link to JavaScript file -->
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">The World Of Majora's Mask </div>
+            <div class="logo">The World Of Zelda</div>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#characters">Characters</a></li>
                 <li><a href="#origin">Origin</a></li>
                 <li><a href="#series">The Series</a></li>
@@ -18,42 +21,80 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to the World of Majora's Mask</h1>
-            <p>Explore the mysteries of Termina!</p>
-            <a href="#characters" class="cta-button">Start Your Adventure</a>
-        </div>
-    </section>
+    <main>
+        <section class="characters-section" id="characters">
+            <h2>Main Characters</h2>
+            <div class="character-grid">
+                <div class="character">
+                    <img src="link.jpg" alt="Link" class="character-image">
+                    <a href="#link-info" class="character-button link-button">Link</a>
+                </div>
+                <div class="character">
+                    <img src="zelda.jpg" alt="Princess Zelda" class="character-image">
+                    <a href="#zelda-info" class="character-button zelda-button">Zelda</a>
+                </div>
+                <div class="character">
+                    <img src="ganon.jpg" alt="Ganondorf" class="character-image">
+                    <a href="#ganon-info" class="character-button ganon-button">Ganon</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="characters">
-        <h2>Main Characters</h2>
-        <div class="character">
-            <h3>Link</h3>
-            <p>The Hero of Time who must save Termina from the moon's impending doom.</p>
-        </div>
-        <div class="character">
-            <h3>Tatl</h3>
-            <p>A fairy who aids Link on his journey, providing guidance and support.</p>
-        </div>
-        <div class="character">
-            <h3>Majora's Mask</h3>
-            <p>The cursed mask that brings chaos and destruction to Termina.</p>
-        </div>
-    </section>
+        <!-- Character Information Sections -->
+        <section class="character-info" id="link-info" style="display:none;">
+            <div class="info-container">
+                <img src="link.jpg" alt="Link" class="info-image">
+                <div class="info-text">
+                    <h3 class="character-name">Link</h3>
+                    <p>Link is the main hero in the Legend of Zelda series, known for his bravery and determination. He often embarks on quests to rescue Princess Zelda and stop the evil sorcerer Ganondorf.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="origin">
-        <h2>Origin of Majora's Mask</h2>
-        <p>Released in 2000 for the Nintendo 64, Majora's Mask is known for its dark themes and time-based gameplay mechanics, offering a unique experience in the Zelda series.</p>
-    </section>
+        <section class="character-info" id="zelda-info" style="display:none;">
+            <div class="info-container">
+                <img src="zelda.jpg" alt="Zelda" class="info-image">
+                <div class="info-text">
+                    <h3 class="character-name">Zelda</h3>
+                    <p>Princess Zelda is a key character in the Legend of Zelda series, known for her wisdom and strength. She is often the guardian of the Triforce, a powerful artifact.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="series">
-        <h2>The Legend of Zelda Series</h2>
-        <p>Since its inception in 1986, the Zelda series has become one of the most beloved franchises in gaming, known for its rich storytelling and immersive worlds.</p>
-    </section>
+        <section class="character-info" id="ganon-info" style="display:none;">
+            <div class="info-container">
+                <img src="ganon.jpg" alt="Ganon" class="info-image">
+                <div class="info-text">
+                    <h3 class="character-name">Ganon</h3>
+                    <p>Ganondorf, often known as Ganon, is the main villain in the Legend of Zelda series. He is a powerful sorcerer seeking the Triforce to rule Hyrule.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Majora's Mask Fan Page. All rights reserved.</p>
+        <p>&copy; 2024 Zelda Fan Page. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll('.character-button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent default anchor click behavior
+
+                    const targetId = button.getAttribute('href').substring(1); // Get target section ID
+                    const targetSection = document.getElementById(targetId);
+
+                    // Show the target section
+                    if (targetSection) {
+                        targetSection.style.display = 'flex'; // Change to flex to match previous styles
+                        targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

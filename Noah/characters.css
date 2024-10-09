@@ -1,0 +1,192 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Default font for the rest of the page */
+}
+
+body {
+    color: #f5f5f5; /* Light text for contrast */
+    background-color: #0d0d0d; /* Dark background for a mystical look */
+    display: flex;
+    flex-direction: column; /* Aligns items in a column */
+    min-height: 100vh; /* Minimum height for the body */
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.7); /* Gold shadow for depth */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 10px #ffcc00; /* Glow effect on hover */
+}
+
+/* Main Section */
+main {
+    flex: 1; /* Allows main to take up available space */
+}
+
+/* Characters Section */
+.characters-section {
+    padding: 40px;
+    background-color: rgba(30, 30, 30, 0.9);
+    color: white;
+    text-align: center;
+}
+
+.characters-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00; /* Glow effect */
+}
+
+.character-grid {
+    display: flex;
+    justify-content: center; /* Center align */
+    gap: 40px; /* Space between images */
+}
+
+.character {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center align items */
+}
+
+.character-image {
+    width: 250px; /* Consistent width for character images */
+    height: 250px; /* Set a consistent height */
+    object-fit: contain; /* Ensures the entire image is visible */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Character Buttons */
+.character-button {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 20px; /* Padding around the button */
+    color: black; /* Button text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Round corners */
+    font-family: 'Press Start 2P', cursive; /* Gamer font for buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Button shadow */
+}
+
+/* Individual Button Colors */
+.link-button {
+    background-color: #4CAF50; /* Green for Link */
+}
+
+.zelda-button {
+    background-color: #D5006D; /* Pink for Zelda */
+}
+
+.ganon-button {
+    background-color: #FF5722; /* Dark orange for Ganon */
+}
+
+.character-button:hover {
+    opacity: 0.8; /* Slightly darken buttons on hover */
+}
+
+/* Character Info Sections */
+.character-info {
+    padding: 40px;
+    padding-top: 100px; /* Added padding to create space at the top */
+    background-color: rgba(30, 30, 30, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align content */
+    height: 100vh; /* Full height */
+}
+
+/* Additional styles for the overlay */
+.info-container {
+    display: flex; /* Flex layout for image and text */
+    gap: 20px; /* Space between image and text */
+    max-width: 1200px; /* Limit the width for better layout */
+}
+
+.info-image {
+    width: 300px; /* Larger image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.info-text {
+    max-width: 600px; /* Limit text width for better readability */
+}
+
+.character-name {
+    font-family: 'Press Start 2P', cursive; /* Gamer font for character names */
+    color: #ffcc00; /* Gold color for names */
+    text-shadow: 0 0 10px #ffcc00; /* Glow effect */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Additional styles for character descriptions */
+.character-name {
+    font-family: 'Press Start 2P', cursive; /* Keeping the Zelda-like font for names */
+    color: #ffcc00; /* Gold color for character names */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Slight shadow for depth */
+}
+
+.description {
+    font-family: 'Roboto Slab', serif; /* Use a new font for the description */
+    color: #f0f0f0; /* Light gray for contrast */
+    background: rgba(30, 30, 30, 0.9); /* Darker semi-transparent background */
+    border: 2px solid #ff4500; /* Orange-red border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding around the text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.description:hover {
+    background: rgba(255, 69, 0, 0.7); /* Orange-red background on hover */
+    color: #fff; /* White text on hover for contrast */
+    transform: scale(1.02); /* Slightly enlarge the description box on hover */
+}
+

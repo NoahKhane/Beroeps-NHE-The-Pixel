@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Characters</title>
+    <link rel="stylesheet" href="characters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Zelda-like font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> <!-- New font for descriptions -->
+    <script defer src="script.js"></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The World Of Zelda</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#origin">Origin</a></li>
+                <li><a href="#series">The Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="characters-section" id="characters">
+            <h2>Main Characters</h2>
+            <div class="character-grid">
+                <div class="character">
+                    <img src="link.jpg" alt="Link" class="character-image">
+                    <a href="#link-info" class="character-button link-button">Link</a>
+                </div>
+                <div class="character">
+                    <img src="zelda.jpg" alt="Princess Zelda" class="character-image">
+                    <a href="#zelda-info" class="character-button zelda-button">Zelda</a>
+                </div>
+                <div class="character">
+                    <img src="ganon.jpg" alt="Ganondorf" class="character-image">
+                    <a href="#ganon-info" class="character-button ganon-button">Ganon</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Information Sections -->
+        <section class="character-info" id="link-info">
+            <div class="info-container">
+                <img src="link.jpg" alt="Link" class="info-image">
+                <div class="info-text">
+                    <h3 class="character-name">Link</h3>
+                    <br>
+                    <p class="description">Link is the main hero in the Legend of Zelda series, known for his bravery and determination. He often embarks on quests to rescue Princess Zelda and stop the evil sorcerer Ganondorf. Armed with the Master Sword and the Hylian Shield, Link battles various monsters and explores the vast land of Hyrule.
+
+                        In his adventures, he solves puzzles, finds treasures, and learns new skills. Dressed in his iconic green tunic and hat, Link symbolizes courage and hope. Each game in the series showcases his growth as a hero, making him a beloved character for players of all ages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="character-info" id="zelda-info">
+            <div class="info-container">
+                <img src="zelda.jpg" alt="Zelda" class="info-image">
+                <div class="info-text">
+                    <h3 class="character-name">Zelda</h3>
+                    <br>
+                    <p class="description">Princess Zelda is a key character in the Legend of Zelda series, known for her wisdom and strength. She is often the guardian of the Triforce, a powerful artifact that grants great abilities. Zelda frequently finds herself in danger, needing rescue from the evil Ganondorf or other threats.
+
+                        Despite facing challenges, she plays a crucial role in guiding Link on his adventures. Zelda is not just a damsel in distress; she has her own abilities and can fight alongside Link. Her character represents hope and bravery, making her a beloved figure in the series and a symbol of resilience in the face of evil.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="character-info" id="ganon-info">
+            <div class="info-container">
+                <img src="ganon.jpg" alt="Ganon" class="info-image">
+                <div class="info-text">
+                    <h3 class="character-name">Ganon</h3>
+                    <br>
+                    <p class="description">Ganondorf, often known as Ganon, is the main villain in the Legend of Zelda series. He is a powerful sorcerer and the leader of the Gerudo tribe. Ganon seeks to obtain the Triforce, a magical artifact that grants immense power, to rule the land of Hyrule.
+
+                        Throughout the games, Ganon constantly tries to defeat Link and capture Princess Zelda. He uses dark magic and powerful minions to achieve his goals. Despite his evil nature, Ganon is a complex character, often driven by his desire for power and revenge. His presence poses a constant threat to Hyrule, making him a central figure in Link's adventures.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zelda Fan Page. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".character-button");
+            
+            buttons.forEach(button => {
+                button.addEventListener("click", (event) => {
+                    event.preventDefault(); // Prevent the default anchor behavior
+                    const targetId = button.getAttribute("href");
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the target section
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
