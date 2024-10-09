@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 /* Navigation Bar */
 header {
     background-color: rgba(255, 204, 0, 0.9); /* Light yellow background */
@@ -53,7 +55,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: url('https://example.com/your-pokemon-platinum-background.jpg') no-repeat center center/cover;
+    background: url('Polemon-Giratina-Platinum-e1634683587444.avif') no-repeat center center/cover;
     height: 60vh; /* Adjust height for the hero section */
     display: flex;
     justify-content: center;
@@ -95,3 +97,26 @@ footer {
     padding: 20px;
     position: relative; /* Make footer relative */
 }
+.button
+{
+display: block;
+ background-color: darkorchid; 
+ border:solid 1px black; 
+ border-radius: 5px; 
+ padding: 5px;
+ width: 50%;
+ text-align: center;
+ color: azure;
+ font-size: larger;
+ font-weight: bolder;
+}
+
+.button:hover {
+background-color: #333;
+
+
+}
+
+
+
+
