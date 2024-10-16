@@ -5,28 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Platinum Landing Page</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <style>
+        /* General reset and basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        /* Buttons - Display them next to each other */
+        #characters, #gameplay {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin: 40px 0;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
 <body>
     <header>
         <nav>
             <div class="logo">Pokemon Platinum</div>
-    
         </nav>
     </header>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>characters</title>
-    </head>
-    <body>
-       
-    </body>
-    </html>
-    
+
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to the World of Pokemon Platinum</h1>
@@ -34,20 +98,12 @@
         </div>
     </section>
 
+    <!-- Buttons for navigation to other pages -->
     <section id="characters">
-        <a href="characters.html" class="button">characters</a>
-        <div class="character">
-            
-
-
-            </nav>
-
-            <a href="team_galactic.html" style="color: #00ccff; text-decoration: none;">View Team Galactic Information</a>
-      
-
-
-
-
+        <a href="/index.html" class="button">Home</a>
+        <a href="characters.html" class="button">Characters</a>
+        <a href="gameplay.html" class="button">Gameplay</a>
+        </section>
 
     <footer>
         <p>&copy; 2024 Pokemon Platinum Fan Page. All rights reserved.</p>
