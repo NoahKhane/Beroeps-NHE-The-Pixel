@@ -76,27 +76,6 @@ nav {
     border-radius: 100px;
 }
 
-/* Characters Section */
-#characters {
-    padding: 20px;
-    background-color: rgba(34, 34, 34, 0.9); /* Darker background for character section */
-    color: white;
-}
-
-.character {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #f39c12; /* Gold line separating characters */
-    padding-bottom: 10px; /* Space below each character */
-}
-
-/* Origin Section */
-#origin,
-#series {
-    padding: 20px;
-    background-color: rgba(34, 34, 34, 0.9); /* Darker background */
-    border-radius: 5px;
-    margin: 10px 0;
-}
 
 /* Footer */
 footer {

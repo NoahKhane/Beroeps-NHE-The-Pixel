@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uncharted 4: A Thief's End - Story</title>
+    <link rel="stylesheet" href="story.css">
+    <script>
+        // JavaScript to add audio functionality
+        let audio;
+
+        window.onload = function() {
+            audio = new Audio('noname.mp3'); // Replace with your audio file path
+            audio.volume = 0.5; // Set volume (0.0 to 1.0)
+            audio.loop = true; // Loop the audio
+
+            // Attempt to play audio automatically
+            audio.play().catch(error => {
+                console.log("Audio playback prevented:", error);
+                // Show a button if autoplay fails
+                showPlayButton();
+            });
+        };
+
+        function showPlayButton() {
+            const button = document.createElement('button');
+            button.textContent = 'Play Background Music';
+            button.style.position = 'fixed';
+            button.style.bottom = '20px';
+            button.style.right = '20px';
+            button.style.padding = '10px 20px';
+            button.style.fontSize = '16px';
+            button.style.backgroundColor = 'rgba(103, 166, 9, 0.8)';
+            button.style.color = 'white';
+            button.style.border = 'none';
+            button.style.borderRadius = '5px';
+            button.style.cursor = 'pointer';
+
+            document.body.appendChild(button);
+
+            button.addEventListener('click', () => {
+                audio.play();
+                button.remove(); // Remove button after audio starts
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Header -->
+        <header>
+            <nav>
+                <div class="logo">Uncharted 4: A Thief's End</div>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Main</a></li>
+                    <li><a href="Uncharted.html">Home</a></li>
+                    <li><a href="/Emilios/characters.html">Characters</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main Section -->
+        <main>
+            <div class="image-container left-image">
+                <img src="Screenshot.png" alt="Nathan Drake Image">
+            </div>
+            <div class="story-content">
+                <h2>The Story of Uncharted 4</h2>
+                <p>
+                    Uncharted 4: A Thief's End is a 2016 action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. It is the fourth main entry in the Uncharted series. Set several years after the events of Uncharted 3: Drake's Deception, players control Nathan Drake, a former treasure hunter coaxed out of retirement by his presumed-dead brother Samuel. With Nathan's longtime partner, Victor Sullivan, they search for clues to the location of Henry Avery's long-lost treasure.
+                </p>
+                <p>
+                    Development of Uncharted 4 began in 2011, soon after the release of Uncharted 3. It was led by creative director Amy Hennig and game director Justin Richmond. Development was hampered in 2014 due to Hennig and Richmond's departure from Naughty Dog; they were replaced by Neil Druckmann and Bruce Straley. The team sought to incorporate elements of open-world gameplay, with larger levels to encourage free-roaming exploration and combat.
+                </p>
+                <p>
+                    Following its announcement in November 2013, A Thief's End was widely anticipated. The game was acclaimed by critics, who praised its gameplay, narrative, emotional depth, visuals, and multiplayer. Considered one of the greatest video games ever made, it won year-end accolades, including Game of the Year awards from several gaming publications.
+                </p>
+            </div>
+            <div class="image-container right-image">
+                <img src="Screenshot 2024-10-16 at 13.59.41.png" alt="Nathan Drake Scene">
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Uncharted 4. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
