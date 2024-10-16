@@ -1,0 +1,96 @@
+/* General styles */
+body {
+    font-family: 'Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d4a70; /* Deep twilight blue */
+    color: black; /* Changed to black for all text */
+}
+
+h1, h2 {
+    color: #f1c40f; /* Golden yellow for titles */
+}
+
+p {
+    line-height: 1.8;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Header styles */
+header {
+    background-color: #3d5c2c; /* Forest green */
+    color: #f1c40f; /* Golden yellow text */
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #3d5c2c; /* Dark forest green */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between menu items */
+}
+
+.navbar a {
+    color: #f1c40f; /* Golden yellow for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    color: #e0dbb8; /* Change color on hover */
+}
+
+/* Game Section styles */
+.game-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fdf9e3; /* Soft parchment color */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.game-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Image styles */
+.game-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #3d5c2c; /* Forest green */
+    color: #f1c40f; /* Golden yellow */
+    text-align: center;
+    padding: 20px 0;
+}

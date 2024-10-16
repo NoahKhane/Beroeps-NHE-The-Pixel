@@ -186,3 +186,53 @@ footer {
     opacity: 0;
     animation: fadeIn 1s ease-in 1.2s forwards; /* Footer fade in with delay */
 }
+.back-button-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    background-color: #f1c40f; /* Golden yellow background */
+    color: #3d5c2c; /* Forest green text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Uncial Antiqua', serif; /* Zelda-like font */
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #3d5c2c; /* Change to forest green on hover */
+    color: #f1c40f; /* Change text color on hover */
+}
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #3d5c2c; /* Dark forest green for the navbar */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between menu items */
+}
+
+.navbar a {
+    color: #f1c40f; /* Golden yellow for links */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Uncial Antiqua', serif; /* Zelda-like font */
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    color: #e0dbb8; /* Change color on hover */
+}
+

@@ -3,14 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttons.forEach(button => {
         button.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default anchor click behavior
-            
             const targetId = button.getAttribute('href').substring(1); // Get target section ID
             const targetSection = document.getElementById(targetId);
 
-            // Show the target section
+            // Only prevent default and scroll if the target section exists on the same page
             if (targetSection) {
-                targetSection.style.display = 'flex'; // Change to flex to match previous styles
+                event.preventDefault(); // Prevent default anchor click behavior
+                targetSection.style.display = 'flex'; // Show the target section
                 targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
             }
         });

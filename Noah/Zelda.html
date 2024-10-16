@@ -3,98 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelda Characters</title>
-    <link rel="stylesheet" href="characters.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Zelda-like font -->
-    <script defer src="script.js"></script> <!-- Link to JavaScript file -->
+    <title>Majora's Mask Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Load script with defer -->
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">The World Of Zelda</div>
+            <div class="logo">The World Of Majora's Mask</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#origin">Origin</a></li>
-                <li><a href="#series">The Series</a></li>
+                <li><a href="characters.html" class="character-button">Characters</a></li>
+                <li><a href="origin.html" class="character-button">Origin</a></li>
+                <li><a href="series.html" class="character-button">The Series</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="characters-section" id="characters">
-            <h2>Main Characters</h2>
-            <div class="character-grid">
-                <div class="character">
-                    <img src="link.jpg" alt="Link" class="character-image">
-                    <a href="#link-info" class="character-button link-button">Link</a>
-                </div>
-                <div class="character">
-                    <img src="zelda.jpg" alt="Princess Zelda" class="character-image">
-                    <a href="#zelda-info" class="character-button zelda-button">Zelda</a>
-                </div>
-                <div class="character">
-                    <img src="ganon.jpg" alt="Ganondorf" class="character-image">
-                    <a href="#ganon-info" class="character-button ganon-button">Ganon</a>
-                </div>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the World of Majora's Mask</h1>
+            <p>Explore the mysteries of Termina!</p>
+            <a href="characters.html" class="cta-button">Start Your Adventure</a>
+        </div>
+    </section>
 
-        <!-- Character Information Sections -->
-        <section class="character-info" id="link-info" style="display:none;">
-            <div class="info-container">
-                <img src="link.jpg" alt="Link" class="info-image">
-                <div class="info-text">
-                    <h3 class="character-name">Link</h3>
-                    <p>Link is the main hero in the Legend of Zelda series, known for his bravery and determination. He often embarks on quests to rescue Princess Zelda and stop the evil sorcerer Ganondorf.</p>
-                </div>
-            </div>
-        </section>
+    <!-- Sections corresponding to the navigation links -->
+    <section id="origin" style="display: none;">
+        <h2>Origin of Majora's Mask</h2>
+        <p>Here is some information about the origin of Majora's Mask...</p>
+    </section>
 
-        <section class="character-info" id="zelda-info" style="display:none;">
-            <div class="info-container">
-                <img src="zelda.jpg" alt="Zelda" class="info-image">
-                <div class="info-text">
-                    <h3 class="character-name">Zelda</h3>
-                    <p>Princess Zelda is a key character in the Legend of Zelda series, known for her wisdom and strength. She is often the guardian of the Triforce, a powerful artifact.</p>
-                </div>
-            </div>
-        </section>
+   
 
-        <section class="character-info" id="ganon-info" style="display:none;">
-            <div class="info-container">
-                <img src="ganon.jpg" alt="Ganon" class="info-image">
-                <div class="info-text">
-                    <h3 class="character-name">Ganon</h3>
-                    <p>Ganondorf, often known as Ganon, is the main villain in the Legend of Zelda series. He is a powerful sorcerer seeking the Triforce to rule Hyrule.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Zelda Fan Page. All rights reserved.</p>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll('.character-button');
-
-            buttons.forEach(button => {
-                button.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent default anchor click behavior
-
-                    const targetId = button.getAttribute('href').substring(1); // Get target section ID
-                    const targetSection = document.getElementById(targetId);
-
-                    // Show the target section
-                    if (targetSection) {
-                        targetSection.style.display = 'flex'; // Change to flex to match previous styles
-                        targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
-                    }
-                });
-            });
-        });
-    </script>
+    <!-- Add the audio element -->
+    <audio id="background-music" src="Legend of Zelda (NES) Intro.mp3" autoplay loop></audio>
 </body>
 </html>
